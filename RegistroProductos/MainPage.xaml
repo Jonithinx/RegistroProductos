@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegistroProductos.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="30">
+            <Label Text="Registro de Productos" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <Entry x:Name="NombreEntry" Placeholder="Nombre del producto" />
+            <Entry x:Name="DescripcionEntry" Placeholder="Descripción" />
+            <Entry x:Name="PrecioEntry" Placeholder="Precio" Keyboard="Numeric" />
+            <Entry x:Name="CantidadEntry" Placeholder="Cantidad" Keyboard="Numeric" />
+
+            <Button Text="Guardar Producto" Clicked="OnGuardarClicked" BackgroundColor="#97F2CC" TextColor="Black" FontAttributes="Bold"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
